@@ -27,7 +27,7 @@ const Header = () => {
 
   return (
     <header>
-        <Link to="/" className="logo">The Physio Spot</Link>
+        <Link to="/" className="logo">Geeky Physio</Link>
         <nav>
             {user && (
                 <>
@@ -35,13 +35,13 @@ const Header = () => {
                     <a onClick={logout}>Logout</a>
                 </>
             )}
-            {!user && (
+            {/* {!user && (
                 <>
                     <Link to='/login'>Login</Link>
                     <Link to='/register'>Register</Link>
                 </>
             )
-            }
+            } */}
         </nav>
       </header>
   )
