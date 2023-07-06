@@ -10,7 +10,7 @@ const PostPage = () => {
     const {id} = useParams();
     useEffect(() => {
         console.log(id)
-        fetch(`http://localhost:4000/post/${id}`).then(response => {
+        fetch(`https://geeky-physio.onrender.com/post/${id}`).then(response => {
             response.json().then(postInfo => {
                 setPostInfo(postInfo);
             });
@@ -31,7 +31,7 @@ const PostPage = () => {
                 )
             }
             <div className='image'>
-                <img src={`http://localhost:4000/${postInfo.cover}`} alt=''/>
+                <img src={`https://geeky-physio.onrender.com/${postInfo.cover}`} alt=''/>
             </div>
             <div className='content' dangerouslySetInnerHTML={{__html:postInfo.content}}></div>
         </div>

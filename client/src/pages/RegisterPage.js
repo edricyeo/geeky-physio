@@ -6,7 +6,7 @@ const RegisterPage = () => {
     const [pw, setPw] = useState('');
     async function register(ev) {
         ev.preventDefault();
-        const response = await fetch('http://localhost:4000/register', {
+        const response = await fetch('https://geeky-physio.onrender.com/register', {
             method: 'POST',
             body: JSON.stringify({user, pw}),
             headers: {'Content-Type':'application/json'},
