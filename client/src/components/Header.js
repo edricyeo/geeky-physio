@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import { UserContext } from './UserContext';
 
@@ -32,7 +32,7 @@ const Header = () => {
             {user && (
                 <>
                     <Link to='/create'>Create New Post</Link>
-                    <a onClick={logout}>Logout</a>
+                    <a onClick={logout} href=''>Logout</a>
                 </>
             )}
             {/* {!user && (
