@@ -20,7 +20,7 @@ const EditPostPage = () => {
                     setSummary(postInfo.summary);
                 });
             });
-    }, []);
+    }, [id]);
 
     async function updatePost(ev) {
         ev.preventDefault();

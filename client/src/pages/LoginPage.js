@@ -28,24 +28,24 @@ const LoginPage = () => {
     if (redirect) {
         return <Navigate to={'/'}/>
     };
-  return (
-    <form className='login' onSubmit={login}>
-        <h1>Login</h1>
-        <input 
-            type="text"
-            placeholder='username'
-            value={user}
-            onChange={ev => setUser(ev.target.value)}
-        />
-        <input 
-            type="text"
-            placeholder='password'
-            value={pw}
-            onChange={ev => setPw(ev.target.value)}
-        />
-        <button>Login</button>
-    </form>
-  )
+    return (
+        <form className='login' onSubmit={login}>
+            <h1>Login</h1>
+            <input 
+                type="text"
+                placeholder='username'
+                value={user}
+                onChange={ev => setUser(ev.target.value)}
+            />
+            <input 
+                type="text"
+                placeholder='password'
+                value={pw}
+                onChange={ev => setPw(ev.target.value)}
+            />
+            <button>Login</button>
+        </form>
+    )
 }
 
 export default LoginPage

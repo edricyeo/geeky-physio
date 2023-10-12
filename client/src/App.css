@@ -1,41 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
   box-sizing: border-box;
+  background-color: #F9F7F7;
 }
-body{
-  color: #222;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
 }
+
 img{
   max-width: 100%;
 }
-main{
-  padding: 10px;
-  max-width: 600px;
-  margin: 0 auto;
-}
+
 a {
   cursor: pointer;
-}
-
-header{
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  align-items: center;
-}
-
-header a{
   text-decoration: none;
-  color: inherit;
-}
-
-header a.logo{
-  font-weight: bold;
-}
-
-header nav{
-  display: flex;
-  gap: 15px;
 }
 
 div.post{
